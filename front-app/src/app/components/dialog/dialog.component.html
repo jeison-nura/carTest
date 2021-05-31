@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Hi User</h1>
+<div mat-dialog-content>
+  <p>Agregar nuevo carro</p>
+  <mat-form-field>
+    <mat-label>Placa</mat-label>
+    <input matInput [(ngModel)]="data.placa">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Modelo</mat-label>
+    <input matInput [(ngModel)]="data.modelo">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Marca</mat-label>
+    <input matInput [(ngModel)]="data.marca">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>DriverId</mat-label>
+    <input matInput [(ngModel)]="data.driverId">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

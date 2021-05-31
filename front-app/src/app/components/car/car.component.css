@@ -1,0 +1,15 @@
+table {
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    padding: 2%;
+}
+
+.buttonAdd{
+    margin: auto;
+    padding: 2%;
+    padding-right: 10%;
+    float: right;
+}
